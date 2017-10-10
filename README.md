@@ -20,7 +20,8 @@ Repository for community contributed themes for [Standard Notes](https://standar
 
 Dark solarized theme, based on the official [Midnight theme](https://standardnotes.org/extensions/midnight).
 Uses mainly official solarized colours, tweaked slightly for greater contrast
-and visibility on mobile.
+and visibility on mobile.  Features proper solarized code syntax highlighting
+in editors.
 
 - Author: Samuel Walladge
 - License: GPLv3
@@ -30,6 +31,7 @@ and visibility on mobile.
 - Install link: <https://static.swalladge.id.au/sn-themes/solarized-dark.css?type=theme&name=Solarized%20Dark>
 
 ![screenshot](./images/solarized-dark-screenshot.png)
+![screenshot with syntax highlighting](./images/solarized-dark-screenshot-syntax.png)
 
 
 # License
