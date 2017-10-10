@@ -1,11 +1,3 @@
-/*
- * Solarized (Dark) theme for Standard Notes
- * Copyright (c) 2017 Samuel Walladge
- *
- * Modified from the official Midnight theme: <https://standardnotes.org/extensions/midnight>
- *
- */
-
 :root {
   --primary-bg-color: #002b36;
   --secondary-bg-color: #073642;
@@ -28,6 +20,13 @@
   --footer-link-color: #93a1a1;
 
   --blue-color: #268bd2;
+  --green-color: #859900;
+  --orange-color: #cb4b16;
+  --violet-color: #6c71c4;
+  --cyan-color: #2aa198;
+  --magenta-color: #d33682;
+
+  --monospace-font: Hack, monospace;
 }
 
 /* General */
@@ -256,14 +255,20 @@ button.light { /* not sure if this is being used? */
 
 /* Editors */
 
+/*
+ * CodeMirror theme below modified from https://codemirror.net/theme/solarized.css
+ */
+
 .CodeMirror {
   background-color: var(--editor-bg-color) !important;
   color: var(--editor-text-color) !important;
   border: 0 !important;
 }
 
-.CodeMirror-cursor {
-  border-color: white;
+/* I want everything in the editors to be uniform */
+.CodeMirror, .CodeMirror * {
+  font-family: var(--monospace-font) !important;
+  font-size: 16px !important;
 }
 
 .CodeMirror-selected {
@@ -274,13 +279,109 @@ button.light { /* not sure if this is being used? */
   background-color: var(--primary-bg-color) !important;
   color: var(--editor-text-color) !important;
   border-color: var(--border-color) !important;
+  border-right: 0;
 }
 
-.CodeMirror .cm-header { font-family: arial; color: var(--editor-text-color) !important;}
-.CodeMirror .cm-variable-2 { font-family: arial; color: var(--link-color) !important;}
-.CodeMirror .cm-link, .cm-string, .cm-keyword { font-family: arial; color: var(--editor-text-color) !important;}
+}
 
-.CodeMirror .CodeMirror-linenumber { color: gray !important; }
+
+/* .cm-s-solarized { */
+/*   line-height: 1.45em; */
+/*   color-profile: sRGB; */
+/*   rendering-intent: auto; */
+/* } */
+/* .cm-s-solarized.cm-s-dark { */
+/*   color: #839496; */
+/*   background-color: #002b36; */
+/*   text-shadow: #002b36 0 1px; */
+/* } */
+
+.CodeMirror-widget {
+  text-shadow: none;
+}
+
+.cm-header { color: var(--editor-text-color) !important; }
+.cm-quote { color: #93a1a1 !important; }
+
+.cm-keyword { color: #cb4b16 !important; }
+.cm-atom { color: #d33682 !important; }
+.cm-number { color: #d33682 !important; }
+.cm-def { color: #2aa198 !important; }
+
+.cm-variable { color: #839496 !important; }
+.cm-variable-2 { color: #b58900 !important; }
+.cm-variable-3, .cm-type { color: #6c71c4 !important; }
+
+.cm-property { color: #2aa198 !important; }
+.cm-operator { color: #6c71c4 !important; }
+
+.cm-comment { color: #586e75 !important; font-style:italic !important; }
+
+.cm-string { color: #859900 !important; }
+.cm-string-2 { color: #b58900 !important; }
+
+.cm-meta { color: #859900 !important; }
+.cm-qualifier { color: #b58900 !important; }
+.cm-builtin { color: #d33682 !important; }
+.cm-bracket { color: #cb4b16 !important; }
+.CodeMirror-matchingbracket { color: #859900 !important; }
+.CodeMirror-nonmatchingbracket { color: #dc322f !important; }
+.cm-tag { color: #93a1a1 !important; }
+.cm-attribute { color: #2aa198 !important; }
+.cm-special { color: #6c71c4 !important; }
+.cm-em {
+  font-style: italic !important;
+}
+.cm-strong { color: #eee !important; }
+.cm-error,
+.cm-invalidchar {
+  color: #586e75 !important;
+  border-bottom: 1px dotted #dc322f;
+}
+
+
+/* Little shadow on the view-port of the buffer view */
+.CodeMirror {
+  -moz-box-shadow: inset 7px 0 12px -6px #000;
+  -webkit-box-shadow: inset 7px 0 12px -6px #000;
+  box-shadow: inset 7px 0 12px -6px #000;
+}
+
+.CodeMirror-linenumber {
+  color: #586e75 !important;
+  text-shadow: #021014 0 -1px;
+  padding: 0 5px;
+}
+
+.CodeMirror-guttermarker-subtle { color: #586e75 !important; }
+.CodeMirror-guttermarker { color: #ddd !important; }
+
+.CodeMirror-gutter .CodeMirror-gutter-text {
+  color: #586e75 !important;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid #fdf6e3;
+  border-color: white !important;
+  background-color: #fdf6e3 !important;
+}
+
+.cm-animate-fat-cursor {
+  background-color: #586e75 !important;
+}
+
+/* Active line */
+.CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.CodeMirror .cm-link {
+  font-family: var(--monospace-font);
+  color: var(--link-color) !important;
+  text-decoration: none !important;
+}
+
+.CodeMirror .CodeMirror-linenumber { color: var(--editor-text-color) !important; }
 
 /* Code Editor bottom toolbar */
 
