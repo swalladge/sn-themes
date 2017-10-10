@@ -26,6 +26,7 @@ Dark solarized theme, based on the official [Midnight theme](https://standardnot
   [solarized-dark.css.json](https://github.com/swalladge/sn-themes/blob/master/solarized-dark.css.json)
 - Install link: <https://static.swalladge.id.au/sn-themes/solarized-dark.css?type=theme&name=Solarized%20Dark>
 
+![screenshot](./images/solarized-dark-screenshot.png)
 
 # License
 
