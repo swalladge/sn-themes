@@ -3,6 +3,14 @@
 
 Repository for community contributed themes for [Standard Notes](https://standardnotes.org/).
 
+## Notes
+
+- Url should be entered in the desktop app as the url of the css theme file
+  followed by `?type=theme&name=TheThemeName`.
+- Desktop app wants the url to end with `.css` otherwise it won't apply the
+  theme (possible bug or security feature?)
+- Mobile app adds `.json` to the url. Planned is for it to strip the `.css`
+  first, but currently does not.
 
 ## Themes
 
@@ -13,8 +21,10 @@ Dark solarized theme, based on the official [Midnight theme](https://standardnot
 
 - Author: Samuel Walladge
 - License: GPLv3
-- Sources: <./solarized-dark.css>, <./solarized-dark.json>
-- Install link: <https://raw.githubusercontent.com/swalladge/sn-themes/master/solarized-dark?type=theme&name=Solarized%20Dark>
+- Sources:
+  [solarized-dark.css](https://github.com/swalladge/sn-themes/blob/master/solarized-dark.css),
+  [solarized-dark.css.json](https://github.com/swalladge/sn-themes/blob/master/solarized-dark.css.json)
+- Install link: <https://static.swalladge.id.au/sn-themes/solarized-dark.css?type=theme&name=Solarized%20Dark>
 
 
 # License
