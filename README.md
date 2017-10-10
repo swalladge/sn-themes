@@ -11,6 +11,7 @@ Repository for community contributed themes for [Standard Notes](https://standar
   theme (possible bug or security feature?)
 - Mobile app adds `.json` to the url. Planned is for it to strip the `.css`
   first, but currently does not.
+- Pull requests, comments, issues, suggestions all welcome!
 
 ## Themes
 
@@ -18,6 +19,8 @@ Repository for community contributed themes for [Standard Notes](https://standar
 ### Solarized (Dark)
 
 Dark solarized theme, based on the official [Midnight theme](https://standardnotes.org/extensions/midnight).
+Uses mainly official solarized colours, tweaked slightly for greater contrast
+and visibility on mobile.
 
 - Author: Samuel Walladge
 - License: GPLv3
@@ -27,6 +30,7 @@ Dark solarized theme, based on the official [Midnight theme](https://standardnot
 - Install link: <https://static.swalladge.id.au/sn-themes/solarized-dark.css?type=theme&name=Solarized%20Dark>
 
 ![screenshot](./images/solarized-dark-screenshot.png)
+
 
 # License
 
