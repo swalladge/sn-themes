@@ -15,7 +15,6 @@ Repository for community contributed themes for [Standard Notes](https://standar
 
 ## Themes
 
-
 ### Solarized (Dark)
 
 Dark solarized theme, based on the official [Midnight theme](https://standardnotes.org/extensions/midnight).
@@ -32,6 +31,14 @@ in editors.
 
 ![screenshot](./images/solarized-dark-screenshot.png)
 ![screenshot with syntax highlighting](./images/solarized-dark-screenshot-syntax.png)
+
+
+### Other community themes
+
+- [Typographic](https://github.com/sancho-one/sn-themes), a light theme for easy reading.
+- [s4skia](https://github.com/flowinho/s4skia), light theme for readability on retina displays.
+- <https://github.com/TobiasDev/SN_Themes>
+- [Lyons](https://github.com/jamesjlyons/Lyons)
 
 
 # License
