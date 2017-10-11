@@ -41,6 +41,49 @@ in editors.
 - [Lyons](https://github.com/jamesjlyons/Lyons)
 
 
+## Developing themes
+
+The easiest way to develop a theme is to pick an existing theme that is
+close to what you are wanting, and modify it from there. The desktop and web
+applications use the css file, which afaik can contain any valid css, including
+font imports and such. The mobile app uses the json style file. (todo: find
+docs for what other json keys do)
+
+
+To make a theme installable, the files simply need to be available on a
+public web server. Steps to ensure it works:
+
+1. make sure the css filename ends with `.css`, or the desktop/web app won't
+   apply the theme
+2. if your theme supports mobile (ie. has a json theme file), name the json
+   file the same as the css file, with `.json` appended (the mobile app
+   behaviour in the future may change to stripping the `.css` part of the url
+   before appending `.json` - will update instructions when I hear more)
+3. upload the two files to the web server so they live in the same directory
+4. make sure the web server supports https, or the theme won't be loaded due to
+   browser security rules
+5. now the install url (that you enter into standardnotes to install the theme)
+   will be `https://your.server/path/to/mytheme.css?type=theme&name=theme-name`,
+   where:
+   - `your.server/path/to/mytheme.css` is the public url for the _css_ theme file
+   - `theme-name` in the params is the name you want Standard Notes to display
+     the theme as
+   - note: the url parameters are simply to tell Standard Notes that it's a
+     theme and give the name to display - the web server doesn't need to care
+     about them
+
+The final product should look like the following in your web server:
+
+```
+/webroot/path/
+             |- mytheme.css
+             \- mytheme.css.json
+```
+
+Now you can distribute the install url for anyone to install the theme.
+
+
+
 # License
 
     Standard Notes themes
