@@ -72,7 +72,9 @@ public web server. Steps to ensure it works:
      theme and give the name to display - the web server doesn't need to care
      about them
 
-The final product should look like the following in your web server:
+__TL;DR__
+
+Theme files like this on an _https_ enabled web server:
 
 ```
 /webroot/path/
@@ -80,7 +82,7 @@ The final product should look like the following in your web server:
              \- mytheme.css.json
 ```
 
-Now you can distribute the install url for anyone to install the theme.
+Distribute install url as `https://your.server/path/to/mytheme.css?type=theme&name=my-theme-name`.
 
 
 
