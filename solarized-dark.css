@@ -29,6 +29,35 @@
   --monospace-font: Hack, monospace;
 }
 
+
+/* customize scrollbar */
+
+::-webkit-scrollbar{
+  width:5px;
+  background-color:#002b36;
+}
+::-webkit-scrollbar:horizontal{
+  height:5px;
+}
+::-webkit-scrollbar-track{
+  border:0;
+  border-radius:0;
+  /* -webkit-box-shadow:0 0 6px #c8c8c8 inset; */
+}
+::-webkit-scrollbar-thumb{
+  background-color:#839496;
+  border:0;
+  border-radius:0;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:#93a1a1;
+  border:0;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color:#93a1a1;
+  border:0;
+}
+
 /* General */
 
 .circle {
