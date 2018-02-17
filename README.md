@@ -5,17 +5,12 @@ Repository for community contributed themes for [Standard Notes](https://standar
 
 ## Notes
 
-- Url should be entered in the desktop app as the url of the css theme file
-  followed by `?type=theme&name=TheThemeName`.
-- Desktop app wants the url to end with `.css` otherwise it won't apply the
-  theme (possible bug or security feature?)
-- Mobile app adds `.json` to the url. Planned is for it to strip the `.css`
-  first, but currently does not.
-- Pull requests, comments, issues, suggestions all welcome!
-
 ## Themes
 
-### Solarized (Dark)
+### Better Solarized Dark
+
+Note: there is now an official solarized theme, but I prefer this because it has
+monospace fonts and not so much bright green.
 
 Dark solarized theme, based on the official [Midnight theme](https://standardnotes.org/extensions/midnight).
 Uses mainly official solarized colours, tweaked slightly for greater contrast
@@ -24,10 +19,8 @@ in editors.
 
 - Author: Samuel Walladge
 - License: GPLv3
-- Sources:
-  [solarized-dark.css](https://github.com/swalladge/sn-themes/blob/master/solarized-dark.css),
-  [solarized-dark.css.json](https://github.com/swalladge/sn-themes/blob/master/solarized-dark.css.json)
-- Install link: <https://static.swalladge.id.au/sn-themes/solarized-dark.css?type=theme&name=Solarized%20Dark>
+- Sources: <https://github.com/swalladge/sn-themes/blob/master/better-solarized-dark/>
+- Install link: <https://static.swalladge.id.au/sn-themes/better-solarized-dark/package.json>
 
 ![screenshot](./images/solarized-dark-screenshot.png)
 ![screenshot with syntax highlighting](./images/solarized-dark-screenshot-syntax.png)
@@ -50,27 +43,11 @@ font imports and such. The mobile app uses the json style file. (todo: find
 docs for what other json keys do)
 
 
-To make a theme installable, the files simply need to be available on a
-public web server. Steps to ensure it works:
-
-1. make sure the css filename ends with `.css`, or the desktop/web app won't
-   apply the theme
-2. if your theme supports mobile (ie. has a json theme file), name the json
-   file the same as the css file, with `.json` appended (the mobile app
-   behaviour in the future may change to stripping the `.css` part of the url
-   before appending `.json` - will update instructions when I hear more)
-3. upload the two files to the web server so they live in the same directory
-4. make sure the web server supports https, or the theme won't be loaded due to
-   browser security rules
-5. now the install url (that you enter into standardnotes to install the theme)
-   will be `https://your.server/path/to/mytheme.css?type=theme&name=theme-name`,
-   where:
-   - `your.server/path/to/mytheme.css` is the public url for the _css_ theme file
-   - `theme-name` in the params is the name you want Standard Notes to display
-     the theme as
-   - note: the url parameters are simply to tell Standard Notes that it's a
-     theme and give the name to display - the web server doesn't need to care
-     about them
+To make a theme installable, follow the instructions at
+<https://docs.standardnotes.org/extensions/publishing.html>.  There are some
+gotchas. Most should be clear if you see the package.zip file I use for the
+solarized theme. I use the package.json for both the extension metadata and the
+package.json that is installed with the app and tells sn which file to load.
 
 __TL;DR__
 
@@ -78,18 +55,18 @@ Theme files like this on an _https_ enabled web server:
 
 ```
 /webroot/path/
-             |- mytheme.css
-             \- mytheme.css.json
+             |- mytheme.json
+             \- mytheme.zip
 ```
 
-Distribute install url as `https://your.server/path/to/mytheme.css?type=theme&name=my-theme-name`.
+Distribute install url as `https://your.server/path/to/mytheme.json`.
 
 
 
 # License
 
     Standard Notes themes
-    Copyright (C) 2017 Samuel Walladge and contributors
+    Copyright (C) 2018 Samuel Walladge and contributors
 
     This program is free software: you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the Free

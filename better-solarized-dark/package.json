@@ -1,0 +1,15 @@
+{
+        "sn": {
+                "main": "dist.css"
+        },
+        "identifier": "au.id.swalladge.theme-better-solarized-dark",
+        "name": "Better Solarized Dark",
+        "content_type": "SN|Theme",
+        "version": "1.0.0",
+        "description": "A dark solarized theme with monospace font and more subtle colour scheme.",
+        "url": "https://static.swalladge.id.au/sn-themes/better-solarized-dark/package.json",
+        "download_url": "https://static.swalladge.id.au/sn-themes/better-solarized-dark/package.zip",
+        "latest_url": "https://static.swalladge.id.au/sn-themes/better-solarized-dark/package.json",
+        "marketing_url": "https://github.com/swalladge/sn-themes",
+        "thumbnail_url": "https://github.com/swalladge/sn-themes/raw/master/images/solarized-dark-screenshot.png"
+}
