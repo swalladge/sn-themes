@@ -1,5 +1,19 @@
 
-# Standard Notes themes
+# Standard Notes themes [UNMAINTAINED]
+
+---
+
+Important note:
+
+I no longer maintain this - the theme in this repo (solarized dark) no longer
+works correctly in recent standardnote releases. Please see
+<https://github.com/orestarod/sn-themes> for a maintained fork. (the solarized
+theme there appears to be slightly different in style to mine, but you can
+always port mine to the recent standardnote versions if you want the same as in
+my screenshots). ~ swalladge
+
+---
+
 
 Repository for community contributed themes for [Standard Notes](https://standardnotes.org/).
 
